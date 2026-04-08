@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 270 20% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 270 20% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 20% 12%;
+
+    --primary: 270 50% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 5% 96%;
+    --secondary-foreground: 270 20% 12%;
+
+    --muted: 270 5% 96%;
+    --muted-foreground: 270 10% 46%;
+
+    --accent: 270 50% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 10% 90%;
+    --input: 270 10% 90%;
+    --ring: 270 50% 60%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 270 5% 98%;
+    --sidebar-foreground: 270 10% 26%;
+    --sidebar-primary: 270 50% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 5% 95%;
+    --sidebar-accent-foreground: 270 20% 12%;
+    --sidebar-border: 270 10% 91%;
+    --sidebar-ring: 270 50% 60%;
+
+    /* Custom tokens */
+    --lavender: 270 50% 60%;
+    --lavender-light: 270 50% 95%;
+    --lavender-glow: 270 60% 70%;
+    --craft-grey: 210 20% 98%;
+    --ink: 270 20% 12%;
+    --surface: 0 0% 100%;
+
+    /* Motion */
+    --ease-goya: cubic-bezier(0.2, 0.8, 0.2, 1);
+    --duration-goya: 240ms;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .goya-transition {
+    transition: all var(--duration-goya) var(--ease-goya);
+  }
+}

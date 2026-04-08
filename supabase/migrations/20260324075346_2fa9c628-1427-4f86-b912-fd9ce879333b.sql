@@ -1,0 +1,1 @@
+DELETE FROM public.user_roles WHERE user_id = 'b9991505-0c79-44db-ad24-7cf6dcfad309' AND role = 'admin';
